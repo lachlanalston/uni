@@ -1,5 +1,5 @@
 REM net time and net view were commented out due to time server not being setup
-REM Sample Command: auto.bat <student_Number> <FileName>; auto.bat 13526759 baseline
+REM Sample Command: auto.bat <student_Number> <FileName>; auto.bat 123456789 baseline
 
 Hostname >> %1_%2.txt
 Ver >> %1_%2.txt
