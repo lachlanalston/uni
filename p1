@@ -1,0 +1,20 @@
+REM net time and net view were commented out due to time server not being setup
+
+Hostname >> 13526759_Baseline.txt
+Ver >> 13526759_Baseline.txt
+Date >> 13526759_Baseline.txt
+Time >> 13526759_Baseline.txt
+Systeminfo >> 13526759_Baseline.txt
+Tasklist >> 13526759_Baseline.txt
+Vol >> 13526759_Baseline.txt
+ipconfig /all >> 13526759_Baseline.txt
+ipconfig /displaydns >> 13526759_Baseline.txt
+whoami >> 13526759_Baseline.txt
+Tasklist /svc >> 13526759_Baseline.txt
+Nbtstat -n >> 13526759_Baseline.txt
+Dir >> 13526759_Baseline.txt
+wmic logicaldisk get deviceid, volumename, description >> 13526759_Baseline.txt
+REM net time >> 13526759_Baseline.txt
+REM net view >> 13526759_Baseline.txt
+Powershell Get-Clipboard >> 13526759_Baseline.txt
+dir /s/a C:\$Recycle.Bin >> 13526759_Baseline.txt
