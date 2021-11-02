@@ -1,0 +1,21 @@
+REM net time and net view were commented out due to time server not being setup
+REM Sample Command: auto.bat <student_Number> <FileName>; auto.bat 123456789 baseline
+
+Hostname >> %1_%2.txt
+Ver >> %1_%2.txt
+Date /t >> %1_%2.txt
+Time /t >> %1_%2.txt
+Systeminfo >> %1_%2.txt
+Tasklist >> %1_%2.txt
+Vol >> %1_%2.txt
+ipconfig /all >> %1_%2.txt
+ipconfig /displaydns >> %1_%2.txt
+whoami >> %1_%2.txt
+Tasklist /svc >> %1_%2.txt
+Nbtstat -n >> %1_%2.txt
+Dir >> %1_%2.txt
+wmic logicaldisk get deviceid, volumename, description >> %1_%2.txt
+REM net time >> %1_%2.txt
+REM net view >> %1_%2.txt
+Powershell Get-Clipboard >> %1_%2.txt
+dir /s/a C:\$Recycle.Bin >> %1_%2.txt
